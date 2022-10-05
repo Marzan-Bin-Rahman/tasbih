@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Hind+Siliguri:wght@600&family=Montserrat:wght@600&display=swap');
-
-/* 
-
-
+/* importing google fonts
+---> amiri (arabic)
+---> Hind shiliguri (benglai)
+---> montserrat (english)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Hind+Siliguri:wght@600&family=Montserrat:wght@600&display=swap');
+
+/* stylng the globals */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,13 @@ body {
   background-color: #051a35;
   color: rgb(48, 240, 160);
 }
+
+a {
+  text-decoration: underline wavy;
+  color: rgb(240, 221, 48);
+}
+
+/* styling the common styles */
 
 .arabic {
   font-family: 'Amiri', serif;
@@ -40,10 +49,7 @@ body {
   display: block;
 }
 
-a {
-  text-decoration: underline wavy;
-  color:rgb(240, 221, 48);
-}
+/* tasbih's style */
 
 .tasbih {
   display: grid;
@@ -57,6 +63,8 @@ a {
   font-size: 40px;
   font-weight: bolder;
 }
+
+/* circles around button */
 
 .circle-1,
 .circle-2 {
@@ -82,6 +90,12 @@ a {
   background-color: #5dac75;
 }
 
+/* styling button */
+
+.btn-container {
+  margin-top: 50px;
+}
+
 .btn {
   width: 230px;
   height: 230px;
@@ -95,9 +109,7 @@ a {
   cursor: pointer;
 }
 
-.btn-container {
-  margin-top: 50px;
-}
+/* responsive style */
 
 @media only screen and (max-width: 700px) {
   .circle-1 {
@@ -121,6 +133,8 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* animation */
 
 @keyframes rotate {
   0% {
