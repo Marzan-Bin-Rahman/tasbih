@@ -1,14 +1,50 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Hind+Siliguri:wght@600&family=Montserrat:wght@600&display=swap');
+
+/* 
+
+
+*/
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #051a35;
-  color: rgba(255, 255, 255, 0.849);
 }
-.header-text{
+
+body {
+  background-color: #051a35;
+  color: rgb(48, 240, 160);
+}
+
+.arabic {
+  font-family: 'Amiri', serif;
+}
+
+.bengali {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.english {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-text,
+.footer-text {
   font-size: 40px;
   text-align: center;
+  margin: 20px;
 }
+
+.footer-text {
+  font-size: 20px;
+  display: block;
+}
+
+a {
+  text-decoration: underline wavy;
+  color:rgb(240, 221, 48);
+}
+
 .tasbih {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,7 +72,7 @@ body {
 .circle-1 {
   box-shadow: 3px 1px 36px 13px #8bd39f;
   animation-name: rotate;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -56,6 +92,11 @@ body {
   font-weight: bolder;
   border: 0;
   margin: auto;
+  cursor: pointer;
+}
+
+.btn-container {
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -75,7 +116,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
   .tasbih {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -85,9 +126,11 @@ body {
   0% {
     box-shadow: 3px 1px 36px 13px #8bd39f;
   }
+
   50% {
     box-shadow: 3px 1px 36px 26px #8bd39f;
   }
+
   100% {
     box-shadow: 3px 1px 36px 13px #8bd39f;
   }
