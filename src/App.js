@@ -10,7 +10,7 @@ function App() {
       <SubhanAllah />
       <Alhamdulillah />
       <LaIlhaIllallah />
-      <small className="footer-text english">Made with ❤️ by <a href="https://www.google.com">Marzan</a></small>
+      <small className="footer-text english">Made with ❤️ by <a href="https://github.com/Marzan-Bin-Rahman" target="_blank" rel="noreferrer">Marzan</a></small>
     </div>
   );
 }
